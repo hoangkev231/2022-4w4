@@ -16,6 +16,8 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS DU MENU FOOTER*/
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
@@ -366,26 +368,13 @@ a:hover, a:active {
   outline: 0;
 }
 
-.site__footer a {
-  color: #f40b0b;
+/*
+ .site__footer a{
+	@include links(	$color__link__footer,
+					$color__link__footer-visited, 
+					$color__link__footer-hover );
 }
-
-.site__footer a:visited {
-  color: #1435eb;
-}
-
-.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
-}
-
-.site__footer a:focus {
-  outline: thin dotted;
-}
-
-.site__footer a:hover, .site__footer a:active {
-  outline: 0;
-}
-
+*/
 .header__titre a {
   color: #f06a6a;
 }
@@ -403,6 +392,76 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+.site__footer .menu-item a {
+  color: #fff;
+  background-color: #327aaa;
+}
+
+.site__footer .menu-item a svg {
+  color: #fff;
+}
+
+.site__footer .menu-item a:visited {
+  color: #bbb;
+  background-color: #7878ad;
+}
+
+.site__footer .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #0f0;
+  background-color: #a092c7;
+}
+
+.site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
+  color: #0f0;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.site__barre .menu-item a {
+  color: #fff;
+  background-color: rgba(140, 189, 223, 0.1);
+}
+
+.site__barre .menu-item a svg {
+  color: #fff;
+}
+
+.site__barre .menu-item a:visited {
+  color: #bbb;
+  background-color: #010113;
+}
+
+.site__barre .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
+  color: #eeff00;
+  background-color: #29809b;
+}
+
+.site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
+  color: #eeff00;
+}
+
+.site__barre .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:active {
   outline: 0;
 }
 
@@ -473,6 +532,7 @@ COMPOSANTES
 }
 
 .site__header {
+  display: flex;
   background-color: #6faee2;
   color: #fa9292;
   padding-left: 10px;
@@ -488,10 +548,20 @@ COMPOSANTES
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.util {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
 }
 
 #chk-burger:checked ~ #burger {
@@ -521,11 +591,6 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #8293e3;
-}
-
-.menu-item a:hover {
-  background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
@@ -559,14 +624,6 @@ COMPOSANTES
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
-  color: #f40b0b;
-}
-
-.site__footer__menu__ul .menu-item a:hover svg {
-  color: #19e123;
-}
-
 .footer__titre,
 .footer__presentation,
 .footer__author {
@@ -581,6 +638,26 @@ COMPOSANTES
 
 .article__contenu {
   display: flex;
+}
+
+.recherche {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+  width: 100%;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
