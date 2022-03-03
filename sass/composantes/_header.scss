@@ -2,10 +2,10 @@
     display: flex;
     background-color: $color__background-header;
     color: $color__font-header;
-    padding-left: 10px;
+    padding-left: 2rem;
 
     .header__titre {
-      font-size: 3em;
+      font-size: 3rem;
       font-family: $font__titre;
     }
     .header__description {

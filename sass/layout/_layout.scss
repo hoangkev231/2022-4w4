@@ -1,11 +1,25 @@
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: Exercice 2 - Hoang Kevin
 */
 
 .site {
-    //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
+
+    &__header {
+        box-shadow: 0 0 1rem 1rem rgba(0,255,255,0.75) inset, 0 0 1rem rgb(0,0,0);
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    &__main {
+        box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgb(0,0,0);
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    &__footer {
+        box-shadow: 0 0 1rem 1rem rgba(0,192,192,0.75) inset, 0 0 1rem rgb(0,0,0);
+        border-radius: 1.5rem;
+    }
 }
 
 
@@ -32,7 +46,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site {
 	display: grid;
-    gap : 10px;
+    gap : 1rem;
 	grid-template-columns: auto;
 	grid-template-areas:
 		"sidebar"

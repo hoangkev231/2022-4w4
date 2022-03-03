@@ -1,9 +1,20 @@
 .site__main {
-    
-    padding: 10px 15px;
+    color: $color__font-main;
+    font-size: 2rem;
+    padding: 2rem;
+    text-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.5);
     background-color: $color__background-main;
-    border-radius: 5px;
-    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+    animation: anim_Main 0.5s forwards;
+}
+
+@keyframes anim_Main {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
 
 .formation {
@@ -16,6 +27,7 @@
         margin: 10px 0px;
         font-family: $font__titre;
     }
+
     &__liste {
         display: flex;
         flex-wrap: wrap;
@@ -41,10 +53,6 @@
 
 }
 
-
-
-
-
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main;
@@ -53,7 +61,7 @@
 
 .cours__sigle {
     font-size: 1.2rem;
-    color: rgb(138, 83, 83);
+    color: $color__font-cours-sigle;
     margin: 0;
 }
 
