@@ -1,0 +1,9 @@
+.erreur-404 {
+    h1{
+        font-size: 6rem;
+        font-family: $font__titre;
+        color: $color__font-404;
+        text-transform: uppercase;
+        text-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.5);
+    }
+}
