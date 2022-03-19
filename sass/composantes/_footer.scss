@@ -2,6 +2,7 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 15px;
+    animation: anim_Footer 1s forwards;
 
     &__menu{ // .site__footer__menu
 
@@ -60,5 +61,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@keyframes anim_Footer {
+  from {
+      transform: translateX(-100%);
+  }
+  
+  50% {
+      transform: translateX(-100%);
+  }
+
+  to {
+      transform: translateX(0%);
   }
 }
