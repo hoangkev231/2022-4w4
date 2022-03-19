@@ -23,13 +23,13 @@
       color: $color__font-header;
       padding-left: 10px;
     }
-  }
+}
 
-  .util{
+.util{
     display: flex;
     flex-direction: column;
     align-items: center;
     @media screen and (min-width: 700px) {
       margin-left : auto;
     }
-  }
+}
