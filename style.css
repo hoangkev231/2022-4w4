@@ -498,7 +498,7 @@ COMPOSANTES
 .formation__titre {
   font-size: 2rem;
   color: white;
-  margin: 0.5rem;
+  margin: 1rem;
   font-family: "Montserrat", sans-serif;
   text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
 }
@@ -510,13 +510,14 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #00c0ff;
-  margin: 0.5rem;
+  margin: 1rem;
   opacity: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   animation: anim_Cours 1s forwards;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -533,15 +534,15 @@ COMPOSANTES
 
 @keyframes anim_Cours {
   from {
-    margin: 50rem 0.5rem;
+    margin: 50rem 1rem;
     opacity: 0;
   }
   50% {
-    margin: 50rem 0.5rem;
+    margin: 50rem 1rem;
     opacity: 0;
   }
   to {
-    margin: 0.5rem;
+    margin: 1rem;
     opacity: 1;
   }
 }
@@ -595,7 +596,7 @@ COMPOSANTES
 
 .site__header .header__titre {
   font-size: clamp(2rem, 2vw, 4rem);
-  font-family: "Orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 2rem;
 }
 
@@ -702,8 +703,8 @@ COMPOSANTES
 }
 
 .site__footer {
-  font-family: "Orbitron", sans-serif;
-  background-color: gray;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 0.25);
   padding: 15px;
   animation: anim_Footer 1s forwards;
 }
@@ -728,7 +729,8 @@ COMPOSANTES
 .footer__presentation,
 .footer__author {
   color: white;
-  text-align: center;
+  text-align: right;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .site__footer {
@@ -746,6 +748,18 @@ COMPOSANTES
   flex-direction: column;
   border: 1px solid #ddd;
   flex: 0 0 30%;
+}
+
+.site__footer__colonne .footer__article {
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.site__footer__colonne .footer__liens {
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.site__footer__colonne .footer__adresse {
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
 .site__footer__ligne {
@@ -768,7 +782,7 @@ COMPOSANTES
 
 .erreur-404 h1 {
   font-size: 6rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #c00000;
   text-transform: uppercase;
   text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -852,6 +866,9 @@ LAYOUT
   /* background-color: $color__background-body; */
   background: linear-gradient(135deg, #404040 0%, #202020 20%, #406080 40%, #404040 50%, #406080 70%, #404040 100%);
   font-family: "Montserrat", sans-serif;
+  /* &__footer {
+        box-shadow: 0 0 2rem 1rem rgba(255,255,255,0.5) inset, 0 0 1rem rgb(0,0,0);
+    } */
 }
 
 .site__header {
@@ -860,10 +877,6 @@ LAYOUT
 
 .site__main {
   box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem black;
-}
-
-.site__footer {
-  box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem black;
 }
 
 .home::after {
@@ -917,7 +930,7 @@ LAYOUT
 
 .site__footer {
   grid-area: footer;
-  background-color: gray;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .site {

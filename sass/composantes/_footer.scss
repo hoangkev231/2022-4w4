@@ -27,7 +27,8 @@
 .footer__presentation,
 .footer__author {
   color: $color__font-footer;
-  text-align: center;
+  text-align: right;
+  text-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
 }
 
 .site__footer {
@@ -45,15 +46,15 @@
       flex: 0 0 30%;
     }
     .footer__article {
-
+      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
     } 
 
     .footer__liens {
-
+      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
     }
 
     .footer__adresse {
-
+      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
     }
   }
 
