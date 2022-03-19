@@ -24,7 +24,7 @@
     &__titre {
         font-size: 2rem;
         color: $color__font-main;
-        margin: 10px 0px;
+        margin: 0.5rem;
         font-family: $font__titre;
     }
 
@@ -35,8 +35,8 @@
     
     &__cours {
         background-color: $color__background-cours;
-        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
-        margin: 10px;
+        margin: 0.5rem;
+        opacity: 1;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -46,24 +46,52 @@
         @media screen and (min-width : $largeur__media--desktop){
             width: 30%;
         }
-        padding: 10px;
+        padding: 0.5rem;
+        animation: anim_Cours 1s forwards;
+    }
+}
+
+@keyframes anim_Cours {
+    from {
+        margin: 50rem 0.5rem;
+        opacity: 0;
     }
 
+    50% {
+        margin: 50rem 0.5rem;
+        opacity: 0;
+    }
 
+    to {
+        margin: 0.5rem;
+        opacity: 1;
+    }
 }
 
-.cours__titre {
-    font-size: 1.5rem;
-    color: $color__font-main;
-    margin: 5px 0px;
-}
+.cours {
 
-.cours__sigle {
-    font-size: 1.2rem;
-    color: $color__font-cours-sigle;
-    margin: 0;
-}
+    &__titre {
+        font-size: 1.5rem;
+        color: $color__font-main;
+        margin: 0;
+        text-shadow: 0 0 0.25rem rgba(0,0,0,0.5);
+    }
 
-.cours__description {
-    font-size: 1rem;
+    &__nbre-heure {
+        font-size: 1rem;
+        text-shadow: 0 0 0.1rem rgba(0,0,0,1);
+    }
+
+    &__sigle {
+        font-size: 1.25rem;
+        color: $color__font-cours-sigle;
+        margin: 0;
+        text-shadow: 0 0 0.1rem rgba(0,0,0,1);
+        text-align: right;
+    }
+
+    &__desc {
+        font-size: 1rem;
+        text-shadow: 0 0 0.1rem rgba(0,0,0,1);
+    }
 }

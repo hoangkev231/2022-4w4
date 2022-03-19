@@ -445,7 +445,7 @@ a:hover, a:active {
 
 .site__barre .menu-item a:visited {
   color: gray;
-  background-color: #202020;
+  background-color: black;
 }
 
 .site__barre .menu-item a:visited svg {
@@ -454,7 +454,7 @@ a:hover, a:active {
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
   color: cyan;
-  background-color: #101010;
+  background-color: #202020;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
@@ -498,7 +498,7 @@ COMPOSANTES
 .formation__titre {
   font-size: 2rem;
   color: white;
-  margin: 10px 0px;
+  margin: 0.5rem;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -509,12 +509,13 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #00c0ff;
-  box-shadow: #394044 1px -1px 10px;
-  margin: 10px;
+  margin: 0.5rem;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
+  padding: 0.5rem;
+  animation: anim_Cours 1s forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -529,20 +530,44 @@ COMPOSANTES
   }
 }
 
+@keyframes anim_Cours {
+  from {
+    margin: 50rem 0.5rem;
+    opacity: 0;
+  }
+  50% {
+    margin: 50rem 0.5rem;
+    opacity: 0;
+  }
+  to {
+    margin: 0.5rem;
+    opacity: 1;
+  }
+}
+
 .cours__titre {
   font-size: 1.5rem;
   color: white;
-  margin: 5px 0px;
+  margin: 0;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.cours__nbre-heure {
+  font-size: 1rem;
+  text-shadow: 0 0 0.1rem black;
 }
 
 .cours__sigle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: black;
   margin: 0;
+  text-shadow: 0 0 0.1rem black;
+  text-align: right;
 }
 
-.cours__description {
+.cours__desc {
   font-size: 1rem;
+  text-shadow: 0 0 0.1rem black;
 }
 
 .site__header {
@@ -607,7 +632,7 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  transition: transform .3s;
+  transition: transform 0.5s;
   transform: rotate(0);
   top: 10px;
   left: 10px;
@@ -644,12 +669,23 @@ COMPOSANTES
 .menu-item a {
   display: block;
   text-decoration: none;
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 .menu-item a:hover {
-  padding: 1rem;
-  transition: padding 0.25s;
+  animation: anim_MenuItemHover 0.5s forwards;
+}
+
+@keyframes anim_MenuItemHover {
+  from {
+    padding: 0.5rem;
+  }
+  50% {
+    padding: 1rem 0.5rem;
+  }
+  to {
+    padding: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -809,7 +845,8 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #202020;
+  /* background-color: $color__background-body; */
+  background: linear-gradient(135deg, #404040 0%, #202020 20%, #406080 40%, #404040 50%, #406080 70%, #404040 100%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -825,37 +862,49 @@ LAYOUT
   box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem black;
 }
 
-.home::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(135deg, #404040 0%, #202020 20%, #406080 40%, #404040 50%, #406080 70%, #404040 100%);
-  /* background-color: $color__background-body-clip;
-    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%); */
-  z-index: -1;
-  opacity: 0;
-  animation: anim_Background 4s forwards infinite;
+/* Animation du background gradient désactivé parce qu'il ne couvre pas le site/viewport entièrement. */
+/* .home::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(135deg,
+    rgba(64,64,64,1) 0%,
+    rgba(32,32,32,1) 20%,
+    rgba(64,96,128,1) 40%,
+    rgba(64,64,64,1) 50%,
+    rgba(64,96,128,1) 70%,
+    rgba(64,64,64,1) 100%);
+
+    background-color: $color__background-body-clip;
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
+
+    z-index: -1;
+
+    opacity: 0;
+    animation: anim_Background 4s forwards infinite;
 }
 
 @keyframes anim_Background {
-  from {
-    transform: translateX(10%) scaleX(1.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-10%) scaleX(1.5);
-    opacity: 0;
-  }
-}
+    from {
+        transform: translateX(10%) scaleX(1.5);
+        opacity: 0;
+    }
 
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-10%) scaleX(1.5);
+        opacity: 0;
+    }
+} */
 .site__header {
   grid-area: header;
   background-color: rgba(192, 192, 192, 0.5);

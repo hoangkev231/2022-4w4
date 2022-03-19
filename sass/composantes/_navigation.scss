@@ -1,7 +1,7 @@
 
 #burger {
     position : absolute;
-    transition : transform .3s;
+    transition : transform 0.5s;
     transform : rotate(0);
     top: 10px;
     left: 10px;
@@ -37,12 +37,25 @@
     a{
         display : block;
         text-decoration: none;
-        padding: 0.75rem;
+        padding: 0.5rem;
         
         &:hover {
-            padding: 1rem;
-            transition: padding 0.25s;
+            animation: anim_MenuItemHover 0.5s forwards;
         }
+    }
+}
+
+@keyframes anim_MenuItemHover {
+    from {
+        padding: 0.5rem;
+    }
+
+    50% {
+        padding: 1rem 0.5rem;
+    }
+
+    to {
+        padding: 1rem;
     }
 }
 

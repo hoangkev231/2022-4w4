@@ -1,5 +1,12 @@
 .site {
-    background-color: $color__background-body;
+    /* background-color: $color__background-body; */
+    background: linear-gradient(135deg,
+    rgba(64,64,64,1) 0%,
+    rgba(32,32,32,1) 20%,
+    rgba(64,96,128,1) 40%,
+    rgba(64,64,64,1) 50%,
+    rgba(64,96,128,1) 70%,
+    rgba(64,64,64,1) 100%);
     font-family: $font__main;
 
     &__header {
@@ -15,7 +22,9 @@
     }
 }
 
-.home::after {
+/* Animation du background gradient désactivé parce qu'il ne couvre pas le site/viewport entièrement. */
+
+/* .home::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -24,6 +33,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+
     background: linear-gradient(135deg,
     rgba(64,64,64,1) 0%,
     rgba(32,32,32,1) 20%,
@@ -31,9 +41,12 @@
     rgba(64,64,64,1) 50%,
     rgba(64,96,128,1) 70%,
     rgba(64,64,64,1) 100%);
-    /* background-color: $color__background-body-clip;
-    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%); */
+
+    background-color: $color__background-body-clip;
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
+
     z-index: -1;
+
     opacity: 0;
     animation: anim_Background 4s forwards infinite;
 }
@@ -52,8 +65,7 @@
         transform: translateX(-10%) scaleX(1.5);
         opacity: 0;
     }
-}
-
+} */
 
 .site__header{
     grid-area: header;  
