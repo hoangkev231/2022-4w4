@@ -4,6 +4,7 @@
     background-color: $color__background-header;
     color: $color__font-header;
     padding-left: 2rem;
+    text-shadow: 0 0 0.25rem rgba(0,0,0,0.5);
     animation: anim_Header 1s forwards;
 
     @media screen and (min-width: 700px) {
@@ -18,6 +19,7 @@
     .header__titre {
       font-size: clamp(2rem, 2vw, 4rem);
       font-family: $font__titre;
+      padding: 0 2rem;
     }
     .header__description {
       font-size: clamp(1rem, 2vw, 2rem);
