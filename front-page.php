@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main class="site__main">
-<h1>Bienvenue au site!</h1>
+<h1>Bienvenue au site des cours du TIM!</h1>
 <!--
 <section class="animation">
     <div class="animation__bloc">1</div>

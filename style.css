@@ -20,8 +20,8 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS DU MENU FOOTER*/
-/* ---------------- LIENS  DU MENU PRINCIPAL*/
-/* ---------------- LIENS HEADER titre principal du site */
+/* ---------------- LIENS DU MENU PRINCIPAL*/
+/* ---------------- LIENS HEADER - titre principal du site */
 /* ---------------- FONT */
 /* ---------------- RECHERCHE */
 /* ------------------------------------- points de rupture des media queries */
@@ -353,11 +353,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #004080;
 }
 
 a:visited {
-  color: #5c4033;
+  color: teal;
 }
 
 a:hover, a:focus, a:active {
@@ -400,30 +400,30 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #fff;
-  background-color: #327aaa;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .site__footer .menu-item a svg {
-  color: #fff;
+  color: white;
 }
 
 .site__footer .menu-item a:visited {
-  color: #bbb;
-  background-color: #7878ad;
+  color: #00c0ff;
+  background-color: black;
 }
 
 .site__footer .menu-item a:visited svg {
-  color: #bbb;
+  color: #00c0ff;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #0f0;
-  background-color: #a092c7;
+  color: cyan;
+  background-color: #202020;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #0f0;
+  color: cyan;
 }
 
 .site__footer .menu-item a:focus {
@@ -499,7 +499,7 @@ COMPOSANTES
   font-size: 2rem;
   color: white;
   margin: 0.5rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
 }
 
@@ -786,7 +786,7 @@ COMPOSANTES
 }
 
 .recherche {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 192, 255, 0.25);
   border: 0.25rem solid #00c0ff;
   width: 25rem;
   position: relative;
@@ -798,7 +798,7 @@ COMPOSANTES
 }
 
 .recherche__input:focus {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 255, 255, 0.5);
 }
 
 .recherche__bouton {
@@ -866,49 +866,40 @@ LAYOUT
   box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem black;
 }
 
-/* Animation du background gradient désactivé parce qu'il ne couvre pas le site/viewport entièrement. */
-/* .home::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    background: linear-gradient(135deg,
-    rgba(64,64,64,1) 0%,
-    rgba(32,32,32,1) 20%,
-    rgba(64,96,128,1) 40%,
-    rgba(64,64,64,1) 50%,
-    rgba(64,96,128,1) 70%,
-    rgba(64,64,64,1) 100%);
-
-    background-color: $color__background-body-clip;
-    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
-
-    z-index: -1;
-
-    opacity: 0;
-    animation: anim_Background 4s forwards infinite;
+.home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 200%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  /* clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%); */
+  z-index: 1;
+  opacity: 1;
+  animation: anim_Background 2s forwards;
 }
 
 @keyframes anim_Background {
-    from {
-        transform: translateX(10%) scaleX(1.5);
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  51% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 
-    50% {
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(-10%) scaleX(1.5);
-        opacity: 0;
-    }
-} */
 .site__header {
   grid-area: header;
   background-color: rgba(192, 192, 192, 0.5);
