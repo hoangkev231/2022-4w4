@@ -24,6 +24,7 @@ VARIABLES
 /* ---------------- LIENS HEADER - titre principal du site */
 /* ---------------- FONT */
 /* ---------------- RECHERCHE */
+/* --------------  Bouton / lien menu */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -508,6 +509,10 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
 .formation__cours {
   background-color: #00c0ff;
   margin: 1rem;
@@ -788,17 +793,6 @@ COMPOSANTES
   text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.article {
-  font-size: 2rem;
-  color: white;
-}
-
-.article__contenu {
-  display: flex;
-  font-size: 1.5rem;
-  color: #f0f0f0;
-}
-
 .recherche {
   background-color: rgba(0, 192, 255, 0.25);
   border: 0.25rem solid #00c0ff;
@@ -827,6 +821,30 @@ COMPOSANTES
 
 .recherche__bouton svg {
   color: black;
+}
+
+/* -------------------------------------------------
+Navigation catégorie cours
+---------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 10px;
+  background-color: #6286c8;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #ffe600;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #0c5cf0;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #ebd40d;
 }
 
 /* ---------------------------------------------------------
@@ -937,13 +955,13 @@ LAYOUT
   display: grid;
   gap: 1rem;
   grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 768px) {
   .site {
     grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
