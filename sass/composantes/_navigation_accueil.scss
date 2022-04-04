@@ -1,16 +1,53 @@
 .menu-menu_accueil-container {
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        .accueil__cours .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=folder-open');
+        }
+    
+        .accueil__prof {
+    
+        }
+    
+        .accueil__aide{
+    
+        }
+    
+        .accueil__etudiant {
+    
+        }
+    
+        .menu-item {
+            display: flex;
+            background-color: $color__bouton__background;
+            // width: 20%;
+            flex: 0 0 20%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 175px;
 
-}
-
-.menu {
-    display: flex;
-    .menu-item {
-        background-color: $color_bouton_background;
-        a {
-            color: $color_bouton_color;
-            
-            .menu-item-description {
-
+            a {
+                display: flex;
+                color: $color__bouton__color;
+                font-size: clamp(1rem, 2vw, 2rem);
+    
+                .menu-item-description {
+                    font-size: clamp(0.8rem, 1.5vw, 1rem); 
+                }
+    
+                .menu-item-icone {
+                    border: 1px solid #aaa;
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    margin-top: auto;
+                }
             }
         }
     }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme name: 2022-4w4 TP1 Hoang Kevin
+Theme name: 2022-4w4 Lab-5 Hoang Kevin
 Author: Hoang Kevin
 Author URI: https://github.com/hoangkev231/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -821,6 +821,46 @@ COMPOSANTES
 
 .recherche__bouton svg {
   color: black;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=folder-open");
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  display: flex;
+  background-color: #6286c8;
+  flex: 0 0 20%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 175px;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  display: flex;
+  color: #ffe600;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
 }
 
 /* -------------------------------------------------
