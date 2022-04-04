@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
     <h1>---- category.php  ----</h1>
+    <?php if (is_category(array('cours', 'creation-3d', 'web', 'jeu', 'design', 'utilitaire', 'video'))) : ?>
     <section class="formation">
     <?php  wp_nav_menu(array(
             "menu"=>"categorie_cours",
@@ -9,8 +10,6 @@
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php if (is_category(array('cours', 'creation-3d', 'web', 'jeu', 'design', 'utilitaire', 'video'))) : ?>
-
                 <?php 
                     $categories = get_the_category();
                     //var_dump($categories);
@@ -34,10 +33,10 @@
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
                     </article>
-                    <?php endif ?>
                 <?php endwhile ?>
                 <?php endif ?>
         </div>
     </section>
+    <?php endif ?>
 </main>
 <?php get_footer() ?>

@@ -1,0 +1,17 @@
+.menu-menu_accueil-container {
+
+}
+
+.menu {
+    display: flex;
+    .menu-item {
+        background-color: $color_bouton_background;
+        a {
+            color: $color_bouton_color;
+            
+            .menu-item-description {
+
+            }
+        }
+    }
+}
