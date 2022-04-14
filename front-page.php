@@ -24,6 +24,9 @@ wp_nav_menu(array("menu"=>"accueil",
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
 <h1>Les événements à venir</h1>
 
@@ -32,6 +35,9 @@ wp_nav_menu(array("menu"=>"accueil",
 wp_nav_menu(array("menu"=>"evenement",
                         "container"=>"nav")); ?>
 
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
