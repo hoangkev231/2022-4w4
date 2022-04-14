@@ -3,7 +3,7 @@ $color__background-body: rgb(32,32,32);
 $color__background-body-clip: rgb(0,0,0);
 $color__background-main : rgb(0,128,192);
 $color__background-cours : rgb(0,192,255);
-$color__background-header : rgb(192,192,192);
+$color__background-header : rgb(255,255,255);
 $color__background-barre : rgba(64,64,64,0.5);
 $color__background-footer : rgba(255,255,255,0.25);
 $color__background-link : rgba(64,64,64,0);
@@ -51,9 +51,9 @@ $color__font-article-contenu: rgb(240,240,240);
 $color__icone-recherche : rgb(0,0,0);
 
 /* --------------  Bouton / lien menu */
-$color__bouton__color : rgb(255, 230, 0);
-$color__bouton__background : rgb(98, 134, 200);
-$color__bouton__color--hover :rgb(235, 212, 13);
-$color__bouton__background--hover :rgb(12, 92, 240);
-$color__bouton__color--current : rgb(243, 233, 142);
-$color__bouton__background--current : rgb(6, 25, 61);
+$color__bouton__color : rgb(64,64,64);
+$color__bouton__background : rgba(0,192,255,0.5);
+$color__bouton__color--hover :rgb(0,255,255);
+$color__bouton__background--hover :rgba(0,0,0,0.5);
+$color__bouton__color--current : rgb(0,192,255);
+$color__bouton__background--current : rgba(0,0,0,0.5);

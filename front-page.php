@@ -21,6 +21,10 @@
 wp_nav_menu(array("menu"=>"accueil",
                         "container"=>"nav")); ?>
 
+<br>
+<br>
+<br>
+
 <h1>Les événements à venir</h1>
 
 <?php 
@@ -28,6 +32,8 @@ wp_nav_menu(array("menu"=>"accueil",
 wp_nav_menu(array("menu"=>"evenement",
                         "container"=>"nav")); ?>
 
+<br>
+<br>
 <br>
 
    <?php if (have_posts()): the_post(); ?>

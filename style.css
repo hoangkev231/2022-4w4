@@ -586,7 +586,7 @@ COMPOSANTES
 .site__header {
   display: flex;
   flex-direction: column;
-  background-color: silver;
+  background-color: white;
   color: black;
   padding-left: 2rem;
   text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
@@ -696,11 +696,8 @@ COMPOSANTES
   from {
     padding: 1rem 0.5rem;
   }
-  50% {
-    padding: 1.5rem 0.5rem;
-  }
   to {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.5rem;
   }
 }
 
@@ -751,26 +748,25 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
-  flex: 0 0 30%;
+  flex: 0 0 33.33%;
 }
 
 .site__footer__colonne .footer__article {
-  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4rem rgba(255, 255, 255, 0.5) inset;
 }
 
 .site__footer__colonne .footer__liens {
-  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4rem rgba(255, 255, 255, 0.5) inset;
 }
 
 .site__footer__colonne .footer__adresse {
-  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5) inset, 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4rem rgba(255, 255, 255, 0.5) inset;
 }
 
 .site__footer__ligne {
@@ -834,11 +830,9 @@ COMPOSANTES
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.menu-accueil-container .menu .accueil__cours .menu-item-icone,
-.menu-evenement-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+  /* .accueil__cours .menu-item-icone{//li
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
+        } */
 }
 
 .menu-accueil-container .menu .menu-item,
@@ -847,7 +841,7 @@ COMPOSANTES
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #6286c8;
+  background-color: rgba(0, 192, 255, 0.5);
   flex: 0 0 20%;
   height: 175px;
 }
@@ -858,7 +852,7 @@ COMPOSANTES
   flex-direction: column;
   align-items: center;
   font-size: clamp(1rem, 2vw, 2.2rem);
-  color: #ffe600;
+  color: #404040;
   height: 100%;
 }
 
@@ -887,27 +881,27 @@ Navigation catégorie cours
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 10px;
-  background-color: #6286c8;
+  background-color: rgba(0, 192, 255, 0.5);
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #ffe600;
+  color: #404040;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #0c5cf0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #ebd40d;
+  color: cyan;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
-  background-color: #06193d;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-categorie_cours-container .menu .current-menu-item a {
-  color: #f3e98e;
+  color: #00c0ff;
 }
 
 /* ---------------------------------------------------------
@@ -996,7 +990,7 @@ LAYOUT
 
 .site__header {
   grid-area: header;
-  background-color: rgba(192, 192, 192, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .site__barre {

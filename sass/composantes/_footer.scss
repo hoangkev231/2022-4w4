@@ -37,24 +37,23 @@
 
   &__colonne {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     section {
       display: flex;
-      flex-direction: column;  
-      border: 1px solid #ddd;
-      flex: 0 0 30%;
+      flex-direction: column;
+      flex: 0 0 33.33%;
     }
     .footer__article {
-      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
+      box-shadow: 0 0 4rem rgba(255,255,255,0.5) inset /* , 0 0 1rem rgba(0,0,0,0.5) */;
     } 
 
     .footer__liens {
-      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
+      box-shadow: 0 0 4rem rgba(255,255,255,0.5) inset /* , 0 0 1rem rgba(0,0,0,0.5) */;
     }
 
     .footer__adresse {
-      box-shadow: 0 0 2rem rgba(255,255,255,0.5) inset, 0 0 1rem rgba(0,0,0,0.5);
+      box-shadow: 0 0 4rem rgba(255,255,255,0.5) inset /* , 0 0 1rem rgba(0,0,0,0.5) */;
     }
   }
 
