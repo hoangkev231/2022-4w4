@@ -1,6 +1,5 @@
 <?php get_header() ?>
 <main class="site__main">
-<h1>Bienvenue au site des cours du TIM!</h1>
 <!--
 <section class="animation">
     <div class="animation__bloc">1</div>
@@ -11,21 +10,26 @@
 </section>
 -->
 <?php
-    wp_nav_menu(array("menu"=>"menu_accueil",   
-                        "container"=>"nav"));
+    /* wp_nav_menu(array("menu"=>"menu_accueil",   
+                        "container"=>"nav")); */
 ?>
-    <h1>Les études en TIM</h1>
+
+<h1>Le département TIM</h1>
 
 <?php 
 /* --------------------------------------------- menu accueil */
 wp_nav_menu(array("menu"=>"accueil",
                         "container"=>"nav")); ?>
 
+<h1>Les événements à venir</h1>
+
 <?php 
 /* --------------------------------------------- menu evenement */
 wp_nav_menu(array("menu"=>"evenement",
                         "container"=>"nav")); ?>
-                        
+
+<br>
+
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
         <?php the_content() ?>   

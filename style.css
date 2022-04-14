@@ -482,6 +482,12 @@ COMPOSANTES
   animation: anim_Main 0.5s forwards;
 }
 
+.site__main h1 {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0) 100%);
+  padding: 1rem 0;
+}
+
 @keyframes anim_Main {
   from {
     transform: translateX(100%);
