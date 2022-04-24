@@ -41,6 +41,14 @@ wp_nav_menu(array(
     <!-- <h3 class="footer__author">Modifié par Kevin Hoang</h3> -->
 
 </footer>
+
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">X</button>
+    <p class="boite__modale_texte">
+        Ceci est un premier test de boîte modale
+    </p>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 

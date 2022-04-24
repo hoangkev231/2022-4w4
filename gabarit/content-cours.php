@@ -6,12 +6,12 @@ $categories = get_the_category();
 <article class="formation__cours <?php echo $categories[1]->slug; ?>">
     <?php
     $titre = get_the_title();
-    $titreFiltreCours = substr($titre, 7, -6);
+    $titreFiltreCours = substr($titre, 3, -6);
     // $nbHeures = substr($titre, -6);
     $nbHeures = get_field( "nombre_dheures" );
     $departement = get_field( "departement" );
-    $sigleCours = substr($titre, 0, 7);
-    $descCours = wp_trim_words( get_the_content(), 15, "<a href='#'> La suite </a>");
+    $sigleCours = substr($titre, 0, 4);
+    $descCours = wp_trim_words(get_the_content(),15,"<button class='cours__desc__ouvrir'> La suite </button>");
     ?>
     <?php the_post_thumbnail("thumbnail") ?>
     <h3 class="cours__titre">

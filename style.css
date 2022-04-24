@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme name: 2022-4w4 Exercice#3 Hoang Kevin
+Theme name: 2022-4w4 Exercice-4 Hoang Kevin
 Author: Hoang Kevin
 Author URI: https://github.com/hoangkev231/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -471,7 +471,7 @@ a:hover, a:active {
 }
 
 h1 {
-  font-size: clamp(2rem, 8vw, 8rem);
+  font-size: clamp(2rem, 5vw, 8rem);
 }
 
 h2 {
@@ -947,7 +947,23 @@ Navigation catégorie cours
 }
 
 .evenement__resume {
-  background-color: aqua;
+  background-color: cyan;
+}
+
+.boite__modale {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  border: 5px solid #aaa;
+  background-color: #f00;
+  width: 50%;
+  height: 50%;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.ouvrir {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------
@@ -990,6 +1006,7 @@ LAYOUT
   /* &__footer {
         box-shadow: 0 0 2rem 1rem rgba(255,255,255,0.5) inset, 0 0 1rem rgb(0,0,0);
     } */
+  position: relative;
 }
 
 .site__header {
