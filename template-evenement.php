@@ -9,10 +9,14 @@
 
 <?php get_header() ?>
 <main class="site__main">
+   <article class="evenement">
     <!-- <h1>---- Template evenement ------</h1> -->
      <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
-        <?php the_content() ?>        
+        <section class="evenement__resume">
+            <?php the_field('resume'); ?>   
+        </section>
+        </article>
    <?php endif ?>
 </main>
 <?php get_footer() ?>

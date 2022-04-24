@@ -470,6 +470,48 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 8vw, 8rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  font-family: "Poppins", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -902,6 +944,10 @@ Navigation catégorie cours
 
 .menu-categorie_cours-container .menu .current-menu-item a {
   color: #00c0ff;
+}
+
+.evenement__resume {
+  background-color: aqua;
 }
 
 /* ---------------------------------------------------------
