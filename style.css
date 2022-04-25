@@ -585,6 +585,10 @@ COMPOSANTES
   }
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 @keyframes anim_Cours {
   from {
     margin: 50rem 1rem;
