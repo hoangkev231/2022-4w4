@@ -29,7 +29,7 @@ function cidw_4w4_enqueue(){
     true); // true pour intégrer le js en bas du document
 
     wp_enqueue_style('cidw-4w4-google-font',
-    "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap",
+    "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Orbitron&display=swap",
     false);
 }
 

@@ -25,6 +25,7 @@ VARIABLES
 /* ---------------- FONT */
 /* ---------------- RECHERCHE */
 /* --------------  Bouton / lien menu */
+/* ---------------- BOÎTE MODALE */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -496,7 +497,7 @@ h6 {
 
 p {
   font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, h2 {
@@ -504,12 +505,12 @@ h1, h2 {
 }
 
 h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
   font-size: clamp(0.9rem, 1vw, 1.2rem);
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ---------------------------------------------------------
@@ -955,15 +956,11 @@ Navigation catégorie cours
 }
 
 .boite__modale {
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  border: 5px solid #aaa;
-  background-color: #f00;
-  width: 50%;
-  height: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   transform: scale(0);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .ouvrir {
