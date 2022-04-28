@@ -41,20 +41,11 @@
         display : block;
         text-decoration: none;
         padding: 1rem 0.5rem;
-        
+        transition: padding;
+        transition-duration: 0.25s; 
         &:hover {
-            animation: anim_MenuItemHover 0.5s forwards;
+            padding: 1.5rem 0.5rem;
         }
-    }
-}
-
-@keyframes anim_MenuItemHover {
-    from {
-        padding: 1rem 0.5rem;
-    }
-
-    to {
-        padding: 1.5rem 0.5rem;
     }
 }
 

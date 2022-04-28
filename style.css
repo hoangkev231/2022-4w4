@@ -734,19 +734,12 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 1rem 0.5rem;
+  transition: padding;
+  transition-duration: 0.25s;
 }
 
 .menu-item a:hover {
-  animation: anim_MenuItemHover 0.5s forwards;
-}
-
-@keyframes anim_MenuItemHover {
-  from {
-    padding: 1rem 0.5rem;
-  }
-  to {
-    padding: 1.5rem 0.5rem;
-  }
+  padding: 1.5rem 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
