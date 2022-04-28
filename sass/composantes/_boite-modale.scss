@@ -1,15 +1,33 @@
 .boite__modale {
+    position : fixed;
+    top: 0%;
+    left: 33%;
     background-color: $color__background__boite;
-    width : 100%;
+    width : 67%;
     height : 100%;
-    transform : scale(0);
+    transform : translateX(100%);
     transition : all 0.5s ease-in-out;
-    &__fermeture {}
-    &__texte{}
+    box-shadow: 0 0 2rem 2rem rgba(0,0,0,0.5);
+
+    &__fermeture {
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,192,255,0.5) 100%);
+        text-align: right;
+        font-size: 2rem;
+        color: rgb(255,255,255);
+    }
+
+    &__texte{
+        padding-top: 4rem;
+        margin: 0 2rem;
+        color: rgb(255,255,255);
+        font-size: 2rem;
+    }
 }
 
 
 .ouvrir
 {
-    transform : scale(1);
+    transform : translateX(0%);
 }

@@ -543,6 +543,7 @@ COMPOSANTES
 .formation {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 .formation__titre {
@@ -640,7 +641,7 @@ COMPOSANTES
   animation: anim_Header 1s forwards;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .site__header {
     flex-direction: row;
   }
@@ -890,7 +891,14 @@ COMPOSANTES
   align-items: center;
   background-color: rgba(0, 192, 255, 0.5);
   flex: 0 0 20%;
-  height: 175px;
+  width: 10rem;
+  height: 10rem;
+  border: 0.25rem solid white;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 1rem black;
+  transition: box-shadow text-shadow scale;
+  transition-duration: 0.5s;
+  transform: scale(1);
 }
 
 .menu-accueil-container .menu .menu-item a,
@@ -898,25 +906,31 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: clamp(1rem, 2vw, 2.2rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
   color: #404040;
   height: 100%;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
 .menu-evenement-container .menu .menu-item a .menu-item-description {
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
 .menu-evenement-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin-top: auto;
+}
+
+.menu-accueil-container .menu .menu-item:hover,
+.menu-evenement-container .menu .menu-item:hover {
+  border: 0.25rem solid cyan;
+  box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5);
+  transform: scale(1.1);
 }
 
 /* -------------------------------------------------
@@ -956,15 +970,35 @@ Navigation catégorie cours
 }
 
 .boite__modale {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 33%;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 67%;
   height: 100%;
-  transform: scale(0);
+  transform: translateX(100%);
   transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 2rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.boite__modale__fermeture {
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 192, 255, 0.5) 100%);
+  text-align: right;
+  font-size: 2rem;
+  color: white;
+}
+
+.boite__modale__texte {
+  padding-top: 4rem;
+  margin: 0 2rem;
+  color: white;
+  font-size: 2rem;
 }
 
 .ouvrir {
-  transform: scale(1);
+  transform: translateX(0%);
 }
 
 /* ---------------------------------------------------------

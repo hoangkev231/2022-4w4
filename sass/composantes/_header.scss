@@ -7,7 +7,7 @@
     text-shadow: 0 0 0.25rem rgba(0,0,0,0.5);
     animation: anim_Header 1s forwards;
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
     }
     &__titre {

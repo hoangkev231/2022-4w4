@@ -6,11 +6,11 @@ $categories = get_the_category();
 <article class="formation__cours <?php echo $categories[1]->slug; ?>">
     <?php
     $titre = get_the_title();
-    $titreFiltreCours = substr($titre, 3, -6);
+    $titreFiltreCours = substr($titre, 8, -6);
     // $nbHeures = substr($titre, -6);
     $nbHeures = get_field( "nombre_dheures" );
     $departement = get_field( "departement" );
-    $sigleCours = substr($titre, 0, 4);
+    $sigleCours = substr($titre, 0, 7);
     $descCours = get_the_content(); // description complète du cours */
     ?>
     <code class="formation__cours__invisible"><?= $descCours ?></code>

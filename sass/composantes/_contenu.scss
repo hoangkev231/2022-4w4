@@ -30,6 +30,7 @@
 .formation {
     display: flex;
     flex-direction: column;
+    color: $color__font-main;
     
     &__titre {
         font-size: 2rem;
