@@ -1,14 +1,5 @@
 <?php get_header() ?>
 <main class="site__main">
-<!--
-<section class="animation">
-    <div class="animation__bloc">1</div>
-    <div class="animation__bloc">2</div>
-    <div class="animation__bloc">3</div>
-    <div class="animation__bloc">4</div>
-    <div class="animation__bloc">5</div>
-</section>
--->
 <?php
     /* wp_nav_menu(array("menu"=>"menu_accueil",   
                         "container"=>"nav")); */
@@ -43,7 +34,7 @@ wp_nav_menu(array("menu"=>"evenement",
 <br>
 
    <?php if (have_posts()): the_post(); ?>
-        <?php the_title() ?>
+        <h1><?php the_title(); ?></h1>
         <?php the_content() ?>   
   
    <?php endif ?>

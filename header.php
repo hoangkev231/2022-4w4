@@ -11,13 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
     <style>
-    .site {
+    /* .home::after{
+            background-color: <?= /* get_theme_mod("background_clippath"); */ ?>;
+        } */
+    .site { 
         background:<?= get_theme_mod("background_body"); ?>;
         }
     </style>
     <?php show_admin_bar(true); ?>
 </head>
-<body  <?php body_class("site"); ?> style="background:<?= get_theme_mod("background_body"); ?>;">
+<body  <?php body_class("site"); ?> >
 <header class="site__header">
     <section class="site__header__titre">
         <?= get_custom_logo(); ?>
