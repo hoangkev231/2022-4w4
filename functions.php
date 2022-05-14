@@ -225,4 +225,3 @@ Ce hook nous permettra d'adapter la requête avant d'exécuter cette requête
 */ 
 
 add_filter('query_vars', 'cidw_4w4_query_vars' );
-?>

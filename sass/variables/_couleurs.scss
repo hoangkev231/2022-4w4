@@ -5,18 +5,18 @@ $color__background-main : rgb(0,128,192);
 $color__background-cours : rgb(0,192,255);
 $color__background-header : rgb(255,255,255);
 $color__background-barre : rgba(64,64,64,0.5);
-$color__background-footer : rgba(255,255,255,0.25);
+$color__background-footer : rgba(64,64,64,1);
 $color__background-link : rgba(64,64,64,0);
 $color__background-link-hover : rgb(32,32,32);
 
 /* ---------------- LIENS */
-$color__link : rgb(0,64,128);
-$color__link-hover : rgb(255,255,255);
-$color__link-visited : rgb(0,128,128);
+$color__link : rgb(255,255,255);
+$color__link-hover : rgb(0,192,255);
+$color__link-visited : rgb(192,192,192);
 /* ---------------- LIENS FOOTER */
 $color__link__footer : rgb(0,64,128);
 $color__link__footer-hover : rgb(255,255,255);
-$color__link__footer-visited : rgb(0,128,128);
+$color__link__footer-visited : rgb(192,192,192);
 /* ---------------- LIENS DU MENU FOOTER*/
 $color__link__footer__menu : rgb(255,255,255);
 $color__link__footer__menu-visited: rgb(0,192,255);
@@ -44,7 +44,7 @@ $color__font-barre : rgb(255,255,255);
 $color__font-footer : rgb(255,255,255);
 $color__font-404: rgb(192,0,0);
 $color__font-cours-sigle: rgb(0,0,0);
-$color__font-article: rgb(255,255,255);
+$color__font-article: rgb(0,0,0);
 $color__font-article-contenu: rgb(240,240,240);
 
 /* ---------------- RECHERCHE */
@@ -59,4 +59,9 @@ $color__bouton__color--current : rgb(0,192,255);
 $color__bouton__background--current : rgba(0,0,0,0.5);
 
 /* ---------------- BOÎTE MODALE */
-$color__background__boite: rgba(0,0,0,0.75)
+$color__background__boite: rgba(0,0,0,0.75);
+
+
+/* ---------------- BOUTON TRI */
+$color__font__tri: rgb(255,255,255);
+$color__background__tri: rgba(0,0,0,0.5);

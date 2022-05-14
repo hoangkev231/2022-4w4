@@ -18,7 +18,12 @@
         padding-top: 4rem;
         margin: 0 2rem;
         color: rgb(255,255,255);
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        @media screen and (min-width: $largeur__media--mobil) {
+            font-size: 2rem;
+            text-align: left;
+        }
     }
 }
 
@@ -30,12 +35,20 @@
 
 .boite__modale {
     top: 0%;
-    left: 33%;
-    width : 67%;
+    left: 0%;
+    width : 100%;
     height : 100%;
+    @media screen and (min-width: $largeur__media--mobil) {
+        top: 0%;
+        left: 33%;
+        width : 67%;
+        height : 100%;
+    }
 }
 
-.boite__carrousel{
+// Étant donné que la boîte carrousel ne fonctionne pas, elle est mise en commentaire.
+
+/* .boite__carrousel{
     top: 2.5%;
     left: 2.5%;
     width : 95%;
@@ -90,4 +103,4 @@
             }
         }
     }
-}  
+} */

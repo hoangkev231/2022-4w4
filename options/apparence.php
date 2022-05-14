@@ -50,4 +50,3 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
                         "label"=>l'étiquette de la variable dans le formulaire  ]));
 
 */
-?>
