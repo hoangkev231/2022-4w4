@@ -37,12 +37,21 @@
    <br>
    <br>
 
+   <h1>Les ateliers à venir</h1>
+
    <?php
    /* --------------------------------------------- Menu atelier */
    wp_nav_menu(array(
       "menu" => "atelier",
       "container" => "nav"
    )); ?>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
 
    <?php if (have_posts()) : the_post(); ?>
       <h1><?php the_title(); ?></h1>
