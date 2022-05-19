@@ -8,7 +8,7 @@
    <h1>Le département TIM</h1>
 
    <?php
-   /* --------------------------------------------- menu accueil */
+   /* --------------------------------------------- Menu accueil */
    wp_nav_menu(array(
       "menu" => "accueil",
       "container" => "nav"
@@ -24,7 +24,7 @@
    <h1>Les événements à venir</h1>
 
    <?php
-   /* --------------------------------------------- menu evenement */
+   /* --------------------------------------------- Menu evenement */
    wp_nav_menu(array(
       "menu" => "evenements",
       "container" => "nav"
@@ -36,6 +36,13 @@
    <br>
    <br>
    <br>
+
+   <?php
+   /* --------------------------------------------- Menu atelier */
+   wp_nav_menu(array(
+      "menu" => "atelier",
+      "container" => "nav"
+   )); ?>
 
    <?php if (have_posts()) : the_post(); ?>
       <h1><?php the_title(); ?></h1>
