@@ -753,10 +753,10 @@ COMPOSANTES
 }
 
 .site__header .header__description {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1rem, 4vw, 2rem);
   font-family: "Montserrat", sans-serif;
   color: black;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 .util {
@@ -1043,7 +1043,8 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu,
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-atelier-container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,13 +1053,39 @@ COMPOSANTES
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   /* .accueil__cours .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
         } */
 }
 
+.menu-accueil-container .menu .accueil__html-css .menu-item-icone,
+.menu-evenement-container .menu .accueil__html-css .menu-item-icone,
+.menu-atelier-container .menu .accueil__html-css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .accueil__introduction-a-git .menu-item-icone,
+.menu-evenement-container .menu .accueil__introduction-a-git .menu-item-icone,
+.menu-atelier-container .menu .accueil__introduction-a-git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu-accueil-container .menu .accueil__introduction-a-react .menu-item-icone,
+.menu-evenement-container .menu .accueil__introduction-a-react .menu-item-icone,
+.menu-atelier-container .menu .accueil__introduction-a-react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .accueil__css-avance .menu-item-icone,
+.menu-evenement-container .menu .accueil__css-avance .menu-item-icone,
+.menu-atelier-container .menu .accueil__css-avance .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
 .menu-accueil-container .menu .menu-item,
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-atelier-container .menu .menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,6 +1099,7 @@ COMPOSANTES
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   background-color: rgba(0, 192, 255, 0.5);
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
@@ -1093,7 +1121,8 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item a,
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-atelier-container .menu .menu-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1105,17 +1134,19 @@ COMPOSANTES
       -ms-flex-align: center;
           align-items: center;
   font-size: clamp(1.5rem, 2vw, 3rem);
-  color: #404040;
+  color: white;
   height: 100%;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
-.menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-evenement-container .menu .menu-item a .menu-item-description,
+.menu-atelier-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
-.menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-evenement-container .menu .menu-item a .menu-item-icone,
+.menu-atelier-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -1125,7 +1156,8 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item:hover,
-.menu-evenement-container .menu .menu-item:hover {
+.menu-evenement-container .menu .menu-item:hover,
+.menu-atelier-container .menu .menu-item:hover {
   border: 0.25rem solid cyan;
   -webkit-box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5);
           box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5);

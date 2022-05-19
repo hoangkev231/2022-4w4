@@ -14,6 +14,8 @@
           <?php if (have_posts()) : the_post(); ?>
                <h1>Atelier: <?php the_title() ?></h1>
 
+               <br>
+
                <h2>Description de l'atelier</h2>
 
                <p class="atelier__animateur">L'animateur de l'atelier: <?php the_field('animateur'); ?></p>
@@ -22,13 +24,15 @@
 
                <p class="atelier__description"><?php the_field('description'); ?></p>
 
+               <br>
+
                <h2>Horaire et dates de l'atelier</h2>
 
-               <p class="atelier__duree">Durée de chacune des séances: <?php the_field('duree'); ?></p>
+               <p class="atelier__duree">Durée de chacune des séances: <?php the_field('duree'); ?> heures</p>
 
                <p class="atelier__date-debut">Date: <?php the_field('date-debut'); ?> à <?php the_field('date-fin'); ?></p>
 
-               <p class="atelier__jours">La formation se donnera au <?php the_field('jours'); ?> de <?php the_field('heure-debut'); ?> à <?php the_field('heure-fin'); ?></p>
+               <p class="atelier__jours">La formation se donnera au <?php the_field('jours'); ?> de <?php the_field('heure-debut'); ?> à <?php the_field('heure-fin'); ?>.</p>
      </article>
 <?php endif ?>
 </main>

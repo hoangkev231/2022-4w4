@@ -1,11 +1,13 @@
 .menu-accueil-container,
-.menu-evenement-container { // nav
+.menu-evenement-container,
+.menu-atelier-container { // nav
 
     .menu { // ul
 
         display : flex;
         justify-content: space-around;
         align-items: center;
+        text-align: center;
         /* .accueil__cours .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=file-badge-bold');
         } */
@@ -13,9 +15,20 @@
         }
         .accueil__aide .menu-item-icone{ //li
         }
-
         .accueil__etudiant .menu-item-icone{ //li
+        }
 
+        .accueil__html-css .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+        }
+        .accueil__introduction-a-git .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+        }
+        .accueil__introduction-a-react .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+        }
+        .accueil__css-avance .menu-item-icone {
+            background-image: url('https://s2.svgbox.net/files.svg?ic=css');
         }
 
 
@@ -24,6 +37,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            text-align: center;
             background-color: $color__bouton__background;
             flex : 0 0 20%;
             width: 10rem;
@@ -34,13 +48,15 @@
             transition: box-shadow text-shadow scale;
             transition-duration: 0.5s;
             transform: scale(1.0);
+            
             a{
                 display : flex;
                 flex-direction: column;
                 align-items: center;
                 font-size: clamp(1.5rem, 2vw, 3rem);
-                color: $color__bouton__color;
+                color: $color__font-main;
                 height : 100%;
+
                 .menu-item-description { // span
                     font-size: clamp(0.75rem, 1.5vw, 1rem);
 
